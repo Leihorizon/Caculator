@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.caculator.thirdActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-41dp">
+
+        <EditText
+            android:id="@+id/cm2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/dm2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="37dp"
+            android:hint="平方厘米"/>
+
+        <EditText
+            android:id="@+id/dm2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/m2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="26dp"
+            android:hint="平方分米"/>
+
+        <EditText
+            android:id="@+id/m2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/km2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="41dp"
+            android:hint="平方米"/>
+
+        <EditText
+            android:id="@+id/km2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="45dp"
+            android:hint="平方千米"
+            android:layout_above="@+id/button4"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:drawable/btn_radio"
+            android:text="返回"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/cm2"
+            android:gravity="center"
+            android:text="(cm)^2"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/dm2"
+            android:gravity="center"
+            android:text="(dm)^2"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/m2"
+            android:gravity="center"
+            android:text="m^2"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/km2"
+            android:gravity="center"
+            android:text="(km)^2"/>
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/km2"
+            android:layout_centerHorizontal="true"
+            android:text="清除"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
